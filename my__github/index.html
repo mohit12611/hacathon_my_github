@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <div class="main_container">
+
+        <div class="header">
+            <a href="https://github.com/"><img id="git_logo" src="images\my__github.png"></a>
+
+            <form id="form_users" autocomplete="off">
+                <input class="input_text" id="input_users" type="text" placeholder="Search Github">
+            </form>
+
+
+            <div class="nav">
+                <a class="header_pull" href="#"><b>Pulls</b></a>
+
+                <a class="header_issues" href="#"><b>Issues</b></a>
+
+                <a class="header_marketplace" href="#"><b>Marketplace</b></a>
+
+                <a class="header_explore" href="#"><b>Explore</b></a>
+            </div>
+
+            <div class="header_last_ele">
+
+                <a href="#"><i class="far fa-bell"></i></a>
+
+                <div class="dropdown">
+                    <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
+                        <a href="#"><i class="fas fa-plus fa-sm"></i><i class="fas fa-caret-down fa-sm"></i></a>
+                    </span>
+
+
+
+                </div>
+
+
+                <div><a href="#"><img id="profile_pic" src="images/profile_pic.png"><i
+                            class="fas fa-caret-down fa-sm"></i></a></div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="row main_body">
+
+            <div class="span-3">
+
+                <div class="aside_top">
+
+                    <form id="myform" autocomplete="off">
+                        <div class="aside_top_heading form-group">
+                            <h6><b>Repositories</b></h6>
+                            <button class="button_get_repos"><i class="fas fa-book fa-sm"></i>New</button>
+                        </div>
+
+                        <div class="aside_top_search form-group">
+                            <input class="form-control bg-light" id="search" type="text" placeholder="Find a repository...">
+
+                        </div>
+
+
+                    </form>
+
+                    <p style="color:orange"><b>FOUND REPOSITORIES : </b></p>
+                    <div class="aside_top_repos" id="aside_top_repos">
+                        <ul id="myUL">
+
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="aside_bottom">
+                    <div>
+                        <h5 class="heading_bottom"><b>Working with a team?</b></h5>
+                        <p class="notice">
+                            GitHub is built for collaboration. Set up an organization to improve the way your team works
+                            together, and get access to more features.
+                        </p>
+                        <a class="btn btn-outline-primary btn-sm bg-light" href="#">Create an organization
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="middle span-6 bg-light" >
+                <div class="users_found">
+
+                    <div class="Box">
+                        <div class="box_padding">
+                            <h4 class="h4 lh-condensed mb-2">Discover interesting projects and people to populate your
+                                personal news feed.</h4>
+                            <p class="f4 color-text-secondary">
+                                Your news feed helps you keep up with recent activity on repositories you
+                                <a href="#">watch</a>
+                                and people you
+                                <a href="#">follow</a>.
+                            </p>
+                            <button class="btn btn-outline-primary bg-light">Explore GitHub</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="Box2">
+                        <div class="f6 color-text-secondary mt-4">
+                            <i class="far fa-lightbulb"></i>
+                            <strong>ProTip!</strong>
+                            The feed shows you events from people you <a href="#">follow</a> and
+                            repositories you <a href="#">watch</a>.
+                            <br>
+                            <a  style="color:black" class="mb-2 mt-2 d-inline-block"
+                                href="#"
+                            ><i class="fas fa-rss" ></i>  Subscribe to your news feed</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <p style="padding-left: 20px; color:orange;"><b>USERS FOUND: Click on one of below users to list thier repositories:</b></p>
+                <div  id="users_found_div">
+                    
+
+
+                </div>
+
+
+                <div class="Box3 pt-0 p-1" >
+                    <div class="d-flex flex-items-between ">
+                        <div class="col-lg-4 list-style-none mr-lg-5">
+                            <a title="Home page" class="d-none d-lg-flex footer-octicon no-underline"
+                                href="https://github.com">
+                                <div style="margin-right:6px">
+                                    <img id="git_logo_white"src="images/my_github_white.png">
+                                </div>
+
+                                <div>
+                                    <span class="f6 color-text-dark ">
+                                        © 2021 GitHub, Inc.
+                                    </span>
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="d-flex flex-justify-start flex-row box3_max_width">
+                            <ul
+                                class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 color-text-secondary pl-lg-4">
+                                <li class="mb-1">
+                                    <a class="a_black" href="https://github.blog">Blog</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="a_black" href="https://github.com/about">About</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="a_black" href="https://shop.github.com">Shop</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="a_black" href="https://support.github.com">Contact GitHub</a>
+                                </li>
+                                <li class="mb-1"><a class="a_black" href="#">Pricing</a></li>
+                            </ul>
+
+                            <ul
+                                class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6 color-text-secondary pl-lg-4">
+                                <li class="mb-1">
+                                    <a  class="a_black" href="https://docs.github.com">API</a></li>
+                                <li class="mb-1">
+                                    <a class="a_black" href="https://services.github.com">Training</a></li>
+
+                                <li class="mb-1">
+                                    <a class="a_black" href="https://www.githubstatus.com/">Status</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="a_black" href="https://docs.github.com/articles/github-security/">Security</a>
+                                </li>
+                            </ul>
+
+                            <ul
+                                class="col-4 col-sm-4 col-lg-4 col-xl-3 list-style-none f6">
+                                <li class="mb-1">
+                                    <a class="a_black" href="https://github.com/site/terms">Terms</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="a_black" href="https://github.com/site/privacy">Privacy</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="a_black" href="https://docs.github.com">Docs</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="end span-3 bg-light">
+                <div aria-label="Explore">
+
+
+                    <h6 class="f5 text-bold mb-1"><b>Explore repositories</b></h6>
+                    <div class="py-2 my-2 border-bottom color-border-secondary">
+                        <a class="f6 text-bold Link--primary d-flex wb-break-all d-inline-block"
+                            href="#">Technigo/project-weather-app</a>
+                        <p class="f6 color-text-secondary mb-2" itemprop="description">
+                            Weather Web App
+                        </p>
+
+
+                    </div>
+                    <div class="py-2 my-2 border-bottom color-border-secondary">
+                        <a class="f6 text-bold d-flex wb-break-all d-inline-block"
+                            href="#">Darya-Slugina/remix-shop</a>
+                        <p class="f6 color-text-secondary mb-2" itemprop="description">
+                            IT Talents S12 interim project
+                        </p>
+
+                        <span class="mr-2 f6 color-text-secondary text-normal">
+                            <span class="">
+                                <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                <span itemprop="programmingLanguage">JavaScript</span>
+                            </span>
+
+                        </span>
+
+                    </div>
+                    <div class="py-2 my-2 ">
+                        <a class="f6 text-bold d-flex no-underline wb-break-all d-inline-block"
+                            href="#">CeylinBrooks/data-structures-and-algorithms</a>
+                        <p class="f6 color-text-secondary mb-2" itemprop="description">
+
+                        </p>
+
+                        <span class="mr-2 f6 color-text-secondary text-normal">
+                            <span class="">
+                                <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                <span itemprop="programmingLanguage">JavaScript</span>
+                            </span>
+
+                        </span>
+
+                    </div>
+                    <a class="d-block no-underline f6 mb-3"
+                        href="#">
+                        Explore more →
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <script src="github_clone.js">
+
+        </script>
+
+
+</body>
+
+</html>

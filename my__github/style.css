@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgb(30,30,30);
+    background-color: #fff;
+    margin : 0;
+    display : block;
+    word-wrap: break-word;
+    width: 100vw;
+    
+}
+
+.main_container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.header{
+    background : rgb(30,30,30);
+    display : flex;
+    gap:20px;
+    align-items: center;
+    width: 100vw;
+    height: 55px;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #f6f8fa;
+    background-color: rgb(30,30,30);
+    
+}
+
+#git_logo {
+    height : 30px;
+}
+
+.input_text {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: auto;
+    background: rgb(30,30,30);
+    transition: width ease 0.2s;
+    color : white;
+}
+
+.input_text:focus {
+    width : 500px;
+  }
+
+.header .nav{
+    display : flex;
+    gap:20px;
+}
+
+.header .nav a{
+    color:white;
+}
+
+.header_last_ele{
+    margin-left:auto;
+    display :flex;
+    gap: 20px;
+}
+
+.header_last_ele a {
+    color:white;
+}
+
+#profile_pic{
+    height:22px;
+    border-radius: 50%;
+}
+
+
+.main_body {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.span-3 {
+    flex: 1 1 15%;
+    border-right: 1px solid rgb(233, 233, 233);
+    margin: 0 0 0 15px;
+    padding : 20px ;
+    height: 100%;
+}
+
+.aside_top {
+    width: 100%;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    margin: 20px 0 40px 0; 
+}
+
+.aside_top div{
+    padding:8px;
+}
+
+
+.aside_top_heading {
+    display : flex;
+    margin:0;
+}
+
+.aside_top_heading button{
+    display : inline-block;
+    border-radius: 10px;
+    color:white;
+    background: green;
+    margin-left: auto;
+    height :30px;
+    width: 70px;
+    position : relative;
+    bottom:5px;
+}
+
+.aside_top_search input {
+    width :100%;
+    height :30px;
+}
+
+.aside_top_repos {
+    height:300px;
+    overflow: scroll;
+    border : 1px solid black;
+    max-width: 340px;
+}
+
+
+
+.aside_bottom {
+    width : auto;
+}
+
+.middle {
+    flex: 1 1 43%;
+    margin: 0;
+    padding-left:20px;
+}
+
+.users_found .Box {
+
+    padding: 24px 20px 0 20px; 
+    margin-top:26px
+
+}
+
+.users_found .Box2 {
+
+    padding: 0 20px 10px 20px;
+    margin-top:26px;
+
+}
+
+.users_found .Box3 {
+
+    padding: 0  20px 20px 20px;
+    margin-top: auto;
+}
+
+#users_found_div{
+    padding: 0  20px 10px 0px;
+    width: 90%;
+    height:150px;
+    border: 1px solid black;
+    overflow: scroll;
+    margin-left: 20px;
+}
+
+
+.a_black{ 
+    color: black !important;
+}
+
+.box3_max_width{
+    width:100%;
+}
+
+.users_found .box_padding {
+    border: 1px solid grey;
+    border-radius: 8px;
+    text-align : justify;
+    padding: 25px;
+    background:white;
+
+}
+
+.users_found .Box button{
+    border: 1px solid grey;
+    border-radius: 7px;
+    height: 30px;
+    font-size: 12px;
+}
+
+#git_logo_white {
+    height:20px;
+}
+
+.end {
+    flex: 1 1 19%;
+    margin: 0 15px 0 0px;
+    padding : 30px 20px;
+    height: 100vh;
+}
+
