@@ -2,7 +2,7 @@
 
 ::_Steps_::
 
-1 --   Enter name in search bar on the top having place holder- "Search Github"
+1 --   Enter name in search bar on the top having place holder- "Search Github" -- CLICK ENTER
 
        you will see list of users brlow ORANGE TEXT- "Users found" having simillar kind of username.
 
