@@ -2,13 +2,13 @@ let aside_top = document.querySelector("aside_top");
 
 let aside_top_repos = document.querySelector("aside_top_repos");
 
-let form_users = document.getElementById("form_users");
+var input_users = document.getElementById("input_users")
 
 let user = "";
 
 let user_repo_name = "";
 
-form_users.addEventListener("keypress", function (e) {
+input_users.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
     user_repo_name = "";
     user = ""
@@ -69,17 +69,11 @@ form_users.addEventListener("keypress", function (e) {
 let form_repos = document.getElementById("myform");
 
 form_repos.addEventListener("keyup", function myFunction() {
-  
   var input, filter, ul, li, a, i, txtValue;
-  
   input = document.getElementById("search");
-  
   filter = input.value.toUpperCase();
-  
   ul = document.getElementById("myUL");
-  
   li = ul.getElementsByTagName("li");
-  
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
