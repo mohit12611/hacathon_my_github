@@ -10,14 +10,15 @@ let user_repo_name = "";
 
 form_users.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
+    user_repo_name = "";
+    user = ""
+
     var input_users = document.getElementById("input_users").value;
 
     input_users = input_users.split(" ").join("");
 
     fetch(
-      "https://api.github.com/search/users?q=" +
-        input_users +
-        "in:user&per_page=20"
+      `https://api.github.com/search/users?q=${input_users}in:user&per_page=20`
     )
       .then((result) => result.json())
       .then((data) => {
@@ -64,19 +65,21 @@ form_users.addEventListener("keypress", function (e) {
   }
 });
 
+
 let form_repos = document.getElementById("myform");
 
 form_repos.addEventListener("keyup", function myFunction() {
+  
   var input, filter, ul, li, a, i, txtValue;
-
+  
   input = document.getElementById("search");
-
+  
   filter = input.value.toUpperCase();
-
+  
   ul = document.getElementById("myUL");
-
+  
   li = ul.getElementsByTagName("li");
-
+  
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
